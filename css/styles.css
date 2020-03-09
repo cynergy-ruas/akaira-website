@@ -1,0 +1,84 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --yellow: #edb503;
+  --blue: #94ffee;
+  --pink: #f7008a;
+}
+@font-face {
+  font-family: cg-regular;
+  src: url(../assets/fonts/GOTHICR.ttf);
+}
+@font-face {
+  font-family: cg-italic;
+  src: url(../assets/fonts/GOTHICI.TTF);
+}
+@font-face {
+  font-family: cg-bold;
+  src: url(../assets/fonts/GOTHICB.TTF);
+}
+
+body {
+  background-color: var(--black);
+  font-family: "cg-regular";
+}
+
+.logo-container {
+  margin: 8em 0 4em 0;
+  text-align: center;
+}
+.akaira-logo {
+  /* margin: 0 5em; */
+  text-align: center;
+  width: 60%;
+  height: auto;
+}
+.tagline {
+  text-align: center;
+  color: var(--pink);
+}
+main {
+  text-align: center;
+}
+/* CLOCK ANIMANTION */
+#clockdiv {
+  color: var(--white);
+  margin: 1.5em auto;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+}
+
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: var(--black);
+  display: inline-block;
+  text-align: center;
+}
+
+#clockdiv div > span {
+  padding: 8.5px;
+  border-radius: 3px;
+  background: var(--black);
+  display: inline-block;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+@media (max-width: 991.98px) {
+  .akaira-logo {
+    width: 80%;
+  }
+  .tagline > h2 {
+    font-size: 1.6em;
+  }
+  #clockdiv {
+    font-size: 22px;
+  }
+  .img-fluid {
+    max-width: 80%;
+  }
+}

@@ -1,0 +1,184 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --yellow: #edb503;
+  --blue: #94ffee;
+  --pink: #f7008a;
+}
+
+@font-face {
+  font-family: cg-regular;
+  src: url(../assets/fonts/GOTHICR.ttf);
+}
+@font-face {
+  font-family: cg-italic;
+  src: url(../assets/fonts/GOTHICI.TTF);
+}
+@font-face {
+  font-family: cg-bold;
+  src: url(../assets/fonts/GOTHICB.TTF);
+}
+
+a:hover {
+  text-decoration: none;
+}
+body {
+  background-color: var(--black);
+}
+
+/*--------------------------------------------------------------
+      # Header
+      --------------------------------------------------------------*/
+#header {
+  height: 80px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 20px 0;
+  background: #1e4356;
+  font-family: "cg-bold";
+}
+#header {
+  background-color: var(--black);
+}
+#header.header-transparent {
+  background: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+      # Navigation Menu
+      --------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+  justify-content: space-evenly;
+}
+
+.nav-menu a {
+  display: block;
+  position: relative;
+  padding: 10px 15px;
+  transition: 0.3s;
+  color: var(--white);
+  font-size: 18px;
+}
+
+.nav-menu a:hover {
+  border-bottom: 2px solid var(--blue);
+}
+.nav-menu .active > a {
+  color: var(--pink);
+  text-decoration: none;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  font-family: "cg-bold";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  left: -260px;
+  width: 260px;
+  padding-top: 18px;
+  background: #333333;
+  transition: 0.4s;
+}
+button {
+  color: var(--blue);
+}
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav a {
+  display: block;
+  position: relative;
+  color: var(--white);
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
+  color: var(--pink);
+  text-decoration: none;
+}
+
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  color: var(--white);
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(153, 153, 153, 0.8);
+  overflow: hidden;
+  display: none;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: var(--pink);
+}
+
+/* common heading h2 in every page */
+
+main > h2 {
+  color: var(--yellow);
+  text-align: left;
+  font-family: "cg-bold";
+  margin: 3em auto 2em 3em;
+  font-size: 45px;
+}
+@media (max-width: 991.98px) {
+  main > h2 {
+    font-size: 38px;
+    margin: 2.8em auto 0.5em 1em;
+  }
+}
