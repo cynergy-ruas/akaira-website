@@ -18,11 +18,8 @@
   font-family: cg-bold;
   src: url(../assets/fonts/GOTHICB.TTF);
 }
-
-.content {
+p {
   color: var(--white);
-}
-.content > p {
   margin: 0 auto;
   text-align: justify;
   width: 70vw;
@@ -36,8 +33,25 @@
   font-family: "cg-bold";
 }
 @media (max-width: 991.98px) {
-  .content > p {
+  p {
     width: 88vw;
     margin-bottom: 50px;
+  }
+}
+
+h3 {
+  color: var(--yellow);
+  text-align: left;
+  font-family: "cg-bold";
+  margin: 2em auto 1em 5em;
+  font-size: 35px;
+}
+.theme-content {
+  margin-bottom: 3em;
+}
+@media (max-width: 991.98px) {
+  h3 {
+    font-size: 30px;
+    margin: 2.8em auto 0.5em 1em;
   }
 }
