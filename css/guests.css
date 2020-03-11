@@ -1,0 +1,58 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --yellow: #edb503;
+  --blue: #94ffee;
+  --pink: #f7008a;
+}
+
+@font-face {
+  font-family: cg-regular;
+  src: url(../assets/fonts/GOTHICR.ttf);
+}
+@font-face {
+  font-family: cg-italic;
+  src: url(../assets/fonts/GOTHICI.TTF);
+}
+@font-face {
+  font-family: cg-bold;
+  src: url(../assets/fonts/GOTHICB.TTF);
+}
+body {
+  overflow-x: hidden;
+}
+
+.card {
+  padding: 2em;
+  /* border: 2px solid var(--yellow); */
+  /* border-radius: 5%; */
+  background-color: var(--black);
+  margin: 0 auto;
+  color: var(--white);
+  text-align: justify;
+  width: 25rem;
+  height: auto;
+}
+.card > img {
+  border-radius: 10%;
+}
+.card-block {
+  border-left: medium solid var(--pink);
+}
+.card-title {
+  margin: 1em;
+  text-align: center;
+  color: var(--yellow);
+}
+.card-text {
+  padding-left: 1em;
+}
+.guest-row {
+  margin-bottom: 3em;
+}
+
+@media (max-width: 991.98px) {
+  .card {
+    margin: 0 auto;
+  }
+}
