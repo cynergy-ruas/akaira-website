@@ -24,8 +24,7 @@ body {
 
 .card {
   padding: 2em;
-  /* border: 2px solid var(--yellow); */
-  /* border-radius: 5%; */
+
   background-color: var(--black);
   margin: 0 auto;
   color: var(--white);
@@ -52,7 +51,11 @@ body {
 }
 
 @media (max-width: 991.98px) {
+  body {
+    overflow-x: hidden;
+  }
   .card {
-    margin: 0 auto;
+    width: 20rem;
+    padding: 1.2em;
   }
 }
